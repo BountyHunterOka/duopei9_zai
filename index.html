@@ -50,6 +50,7 @@
     <button id="voiceStartBtn" class="voice">开启连麦过滤</button>
     <button id="voiceStopBtn" class="voice">关闭连麦过滤</button>
     <button id="checkBtn" class="check">检查状态</button>
+    <button id="onlyVideo" class="check">只接视频</button>
   </div>
 
   <pre id="log"></pre>
@@ -79,6 +80,7 @@
     document.getElementById('voiceStartBtn').onclick = () => callApi("/voice_start", "开启连麦过滤");
     document.getElementById('voiceStopBtn').onclick = () => callApi("/voice_stop", "关闭连麦过滤");
     document.getElementById('checkBtn').onclick = () => callApi("/check_running", "检查状态");
+    document.getElementById('onlyVideo').onclick = () => callApi("/only_video", "只接视频单");
   </script>
 </body>
 </html>
